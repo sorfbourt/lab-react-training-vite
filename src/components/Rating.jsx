@@ -7,9 +7,6 @@ function Rating({children}) {
     for(let i=0;i<5;i++){
         i< roundedRating ? starsArr.push(true) : starsArr.push(false)
     }
-    console.log(starsArr)
-
-
 
   return (
     <div>
