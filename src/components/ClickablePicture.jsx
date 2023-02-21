@@ -4,17 +4,14 @@ function ClickablePicture({img, imgClicked}) {
   const [clickedPicture, setClickedPicture] = useState(false)
 
     const togglePicture = () =>{
-        // clickedPicture === true ? setClickedPicture(true) : setClickedPicture(false)
         setClickedPicture(!clickedPicture)
-        console.log(clickedPicture)
-        
     }
 
 
     return (
     <div>
 
-        <img src={img} onClick={togglePicture}></img>
+        <img src={clickedPicture === true ? img : imgClicked} onClick={togglePicture}></img>
 
 
     </div>
